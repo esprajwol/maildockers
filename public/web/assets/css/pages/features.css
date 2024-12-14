@@ -1,0 +1,69 @@
+ul.dot-ul-ui.extra li {
+    position: relative;
+}
+
+ul.dot-ul-ui.extra li::before {
+    content: '\f111';
+    position: absolute;
+    font-family: FontAwesome;
+    color: #4f444f;
+    font-size: .7rem;
+    left: -1.9rem;
+    top: 0.9rem;
+}
+
+.extra a {
+    display: inline-block !important;
+}
+
+p.paragraph.extra {
+    font-size: 1.8rem;
+    color: #4f444f;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+p.paragraph.extra b {
+    font-size: 2rem;
+    color: #4f444f;
+    line-height: 2.6rem;
+    font-weight: 500;
+}
+
+.card-item {
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-item.offset {
+    background: #ffffff;
+    border-bottom: 1px solid #4f444f;
+}
+
+.card-item span i {
+    font-size: 3.5rem;
+    color: #999903;
+}
+
+.card-item h3.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.card-item p.paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #777777;
+}
+
+@media (max-width: 576px) {
+    .card-item h3.title,
+    .card-item p.paragraph {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .card-item span i {
+        margin-bottom: 2rem;
+    }
+}

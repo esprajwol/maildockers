@@ -1,0 +1,25 @@
+.ui-widget.ui-widget-content {
+    font-size: 1.7rem;
+}
+
+.nav.nav-tabs {
+    margin-bottom: 2rem;
+}
+
+div.nav-link > img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
+div.nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h3.user-account-title > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}

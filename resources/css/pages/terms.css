@@ -1,0 +1,31 @@
+ul.dot-ul-ui.extra li {
+    position: relative;
+}
+
+ul.dot-ul-ui.extra li::before {
+    content: '\f111';
+    position: absolute;
+    font-family: FontAwesome;
+    color: #4f444f;
+    font-size: .7rem;
+    left: -1.9rem;
+    top: 0.9rem;
+}
+
+.extra a {
+    display: inline-block !important;
+}
+
+p.paragraph.extra {
+    font-size: 1.8rem;
+    color: #4f444f;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+p.paragraph.extra b {
+    font-size: 2rem;
+    color: #4f444f;
+    line-height: 2.6rem;
+    font-weight: 500;
+}

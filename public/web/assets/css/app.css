@@ -1,0 +1,95 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-orange {
+    color: #f36013;
+}
+
+.facebook-blue {
+    color: #3f5a96;
+}
+
+.instagram-black {
+    color: #262626;
+}
+
+.twitter-blue {
+    color: #39a3f0;
+}
+
+.linkedin-blue {
+    color: #2179b3;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: block;
+}
+
+.no-border{
+    border: 0px;
+}
+
+.pl-0{
+    padding-left: 0;
+}
+
+.pr-0{
+    padding-right: 0;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.fontsize-1-7{
+    font-size: 1.7rem;
+}
+.language-dropdown {
+    width: 150px; /* Set the width of the dropdown */
+    height: 35px; /* Set the width of the dropdown */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 5px; /* Add some padding for better appearance */
+    border: 1px solid #ccc; /* Change the border color */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: border-color 0.2s; /* Smooth border color transition */
+}
+
+.language-dropdown:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.language-dropdown {
+    appearance: none; /* Standard */
+    -webkit-appearance: none; /* Chrome/Safari */
+    -moz-appearance: none; /* Firefox */
+    padding: 10px; /* Add padding to adjust for custom icon space */
+    background: white; /* Makes the background transparent */
+    border: 1px solid #ccc; /* Border styling */
+    width: 100%;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"%3E%3Cpath d="M4.29 5.79a1 1 0 011.42 0l2.29 2.29 2.29-2.29a1 1 0 011.42 1.42l-3 3a1 1 0 01-1.42 0l-3-3a1 1 0 010-1.42z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the custom icon */
+    background-size: 1em; /* Adjust the size of the custom icon */
+}
+
+/* Wrapper for custom icon positioning */
+.language-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Adjusting for RTL */
+[dir="rtl"] .language-dropdown {
+    background-position: left 10px center; /* Position icon on the left */
+}

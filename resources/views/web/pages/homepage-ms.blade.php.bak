@@ -1,0 +1,161 @@
+@extends('web.layout')
+@section('title', "Gmail's Messages into an Organised Document")
+@push('extra-styles')
+<link href="{{ asset('./web/assets/css/pages/homepage.css') }}" rel="stylesheet">
+@endpush
+@section('content')
+
+<!-- Email Extracting Form Section -->
+<section class="email-section">
+    <div class="container">
+        <div class="row">
+            <div class="email-extract-form shadow">
+                @if(session('userName'))
+                <div class="dropdown float-end">
+                    <h3 class="user-account-title">{{ session('userEmail') }}</h3>
+                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false" title="MyAccount"></a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="{{ route('web.microsoft.signout') }}" class="dropdown-item danger-link"><i class="fa-solid fa-power-off text-danger"></i> Logout</a>
+                    </div>
+                </div>
+                @endif
+
+                <h1 class="heading">Email to PDF Generator</h1>
+                <p class="form-paragraph">Enter the addresses of both parties for correspondence</p>
+
+                <div class="form-group">
+                    <a class="form-btn" id="btn-generate" href="{{ route('web.microsoft.signin') }}">SignIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About site video display area -->
+<section class="video-section" id="video">
+    <div class="container">
+        <div class="row">
+            <div class="col p-0">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/QCooAZ5Nvgc" title="LegalPDF - Emails and Chats into an Organised Document" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Site features section -->
+<section class="features-section">
+    <div class="container">
+        <div class="row justify-content-between align-content-stretch row-cols-1 row-cols-md-2">
+            <div class="col features-items pl-0">
+                <div class="section-card shadow">
+                    <h3 class="title">Features</h3>
+                    <ul class="dot-ul-ui">
+                        <li class="highlight"><i class="fa-sharp fa-solid fa-square"></i><span>Supports all
+                                languages</span></li>
+                        <li class="highlight"><i class="fa-sharp fa-solid fa-square"></i><span>Supports any
+                                Google suite mailboxes</span></li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>Ready in seconds</span></li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>Highlights keywords</span></li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>Export/ Save/ Print/ Share</span>
+                        </li>
+                    </ul>
+                    <a href="{{ route('web.page', ['slug' => 'features']) }}" class="anchor-link">More</a>
+                </div>
+            </div>
+            <div class="col features-items pr-0">
+                <div class="section-card shadow">
+                    <h3 class="title">Features</h3>
+                    <ul class="dot-ul-ui">
+                        <li class="highlight"><i class="fa-sharp fa-solid fa-square"></i><span>Approved by
+                                Google’s security team!</span></li>
+                        <li class="highlight"><i class="fa-sharp fa-solid fa-square"></i><span>Fully compliant
+                                with GDPR!</span></li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>We do not keep your document</span>
+                        </li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>We do not store any information
+                                about you</span></li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>We can’t read any content from your
+                                email</span></li>
+                        <li><i class="fa-sharp fa-solid fa-square"></i><span>Only you can view the
+                                document</span></li>
+                    </ul>
+                    <a href="{{ route('web.page', ['slug' => 'features']) }}" class="anchor-link">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Site testimonials by clients area -->
+<section class="testimonial-section">
+    <div class="container">
+        <div class="row justify-content-between align-content-stretch row-cols-1 row-cols-sm-3 row-cols-md-3">
+            <div class="col testimonial-items pl-0">
+                <div class="review-card text-center shadow">
+                    <div class="profile-container">
+                        <img src="{{ asset('web/assets/img/person-icon.png') }}" alt="Tom Brown Picture">
+                    </div>
+                    <h3 class="card-title mb-3">Tom Brown, UK</h3>
+                    <p class="card-text">LegalPDF is a fantastic product, so simple and quick to use and
+                        helped me win my case</p>
+                </div>
+            </div>
+            <div class="col testimonial-items">
+                <div class="review-card text-center shadow">
+                    <div class="profile-container">
+                        <img src="{{ asset('web/assets/img/person-icon.png') }}" alt="Tom Brown Picture">
+                    </div>
+                    <h3 class="card-title mb-3">Jack Evans, USA</h3>
+                    <p class="card-text">I just saved hours of endless manual labour with just a few simple
+                        clicks! I highly recommend this product to anyone looking to convert a casual
+                        conversation into a formal document</p>
+                </div>
+            </div>
+            <div class="col testimonial-items pr-0">
+                <div class="review-card text-center shadow">
+                    <div class="profile-container">
+                        <img src="{{ asset('web/assets/img/person-icon.png') }}" alt="Tom Brown Picture">
+                    </div>
+                    <h3 class="card-title mb-3">Laura Williams, UK</h3>
+                    <p class="card-text">I am so happy that this tool exists! Worked so quickly and beatifully,
+                        did exactly what was advertised – THANK YOU LegalPDF!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest blog area -->
+<section class="articles-section" id="articles">
+    <div class="container">
+        <div class="row mb-3 mt-3">
+            <div class="col">
+                <h3 class="title">Latest Articles</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="dot-ul-ui">
+                    <li><a href="{{ route('web.page', ['slug' => 'gmail-to-pdf-converter-online']) }}">Gmail
+                            To Pdf Converter Online</a></li>
+                    <li><a href="{{ route('web.page', ['slug' => 'export-emails-from-gmail-to-pdf']) }}">Export
+                            Emails From Gmail To Pdf</a></li>
+                    <li><a href="{{ route('web.page', ['slug' => 'save-multiple-emails-as-pdf-gmail']) }}">Save
+                            Multiple Emails As Pdf Gmail</a></li>
+                    <li><a href="{{ route('web.page', ['slug' => 'save-email-from-gmail-as-pdf']) }}">Save
+                            Email From Gmail As Pdf</a></li>
+                    <li><a href="{{ route('web.page', ['slug' => 'save-a-gmail-as-pdf']) }}">Save A
+                            Gmail As Pdf</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
+
+@push('extra-scripts')
+
+@endpush

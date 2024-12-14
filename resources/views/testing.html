@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 62.5%;
+            padding: 4rem 3rem;
+            max-width: 100%;
+            font-family: DejaVu Sans, sans-serif;
+            unicode-bidi: bidi-override !important;
+            direction: unset !important;
+        }
+
+        .h-wrapper {
+            direction: rtl;
+        }
+
+        .content {
+            font-size: 1.2rem;
+            color: #7a7a7a;
+            font-weight: bold;
+        }
+
+        .label {
+            text-align: right;
+            color: #7a7a7a;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 2.3rem;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .left-align {
+            width: 25%;
+        }
+
+        .right-align {
+            width: 75%;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        .pdf-logo-holder {
+            width: 13.65rem;
+            height: auto;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .pdf-logo-holder > img {
+            width: 90%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        header.pdf-header {
+            border-bottom: .15rem solid #7a7a7a;
+        }
+
+        header.pdf-header h3.logo-slogan {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            color: #999903;
+            text-align: center;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        header.pdf-header h3.title {
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            color: #999903;
+            font-weight: bold;
+            margin-left: 1rem;
+            margin-bottom: 0;
+        }
+
+        header.pdf-header p.paragraph {
+            color: #7a7a7a;
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 3rem;
+            margin-left: 1rem;
+        }
+
+        section.pdf-invoice .order-details-card {
+            margin-bottom: 1.5rem;
+        }
+
+        section.pdf-invoice .order-details-card h3.card-title {
+            font-size: 2rem;
+            line-height: 2.6rem;
+            color: #7a7a7a;
+            font-weight: bold;
+        }
+
+        section.pdf-invoice .order-details-card .card-items {
+            padding: 0.1rem 0;
+        }
+
+        section.pdf-invoice .order-details-card .card-items .item {
+            border-bottom: 1.5px dotted #7a7a7a;
+            padding: 0.1rem 0;
+            color: #7a7a7a;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .item p {
+            display: inline-block;
+            width: 100%;
+            float: left;
+            margin: 0;
+        }
+
+        .valueP {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        section.pdf-invoice .additional-card {
+            margin: 1.5rem 0;
+        }
+
+        section.pdf-invoice .additional-card h3.card-title {
+            font-size: 1.2rem;
+            line-height: 2.6rem;
+            color: #7a7a7a;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        section.pdf-invoice .additional-card .card-box {
+            max-width: 50%;
+            border: .15rem solid #7a7a7a;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+        section.pdf-invoice .additional-card .card-box .card-p {
+            width: 45%;
+        }
+
+        section.pdf-invoice .additional-card .card-box .card-c {
+            width: 10%;
+        }
+
+        section.pdf-invoice .additional-card .card-box h3.title-1 {
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            color: #7a7a7a;
+            font-weight: bold;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        section.pdf-invoice p.notes {
+            text-align: center;
+            color: #7a7a7a;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2.3rem;
+        }
+
+        section.pdf-message-collection .message-counter-head {
+            border-top: .1rem solid #7a7a7a;
+        }
+
+        section.pdf-message-collection .message-counter-head p.text-1 {
+            color: #7a7a7a;
+            font-size: 1.6rem;
+            font-weight: 200;
+        }
+
+        section.pdf-message-collection .message-counter-head p.text-2 {
+            text-align: center;
+            color: #7a7a7a;
+            font-size: 1.4rem;
+            font-weight: 200;
+        }
+
+        section.pdf-message-collection .message-body h3.subjects {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            color: #7a7a7a;
+        }
+
+        section.pdf-message-collection .message-body h3.sub-subjects {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #7a7a7a;
+        }
+
+        section.pdf-message-collection .message-body .content {
+            color: #7a7a7a;
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 2.3rem;
+        }
+
+        .pdf-page-footer {
+            width: 100%;
+        }
+
+        .pdf-page-footer .title {
+            text-align: center;
+        }
+
+        footer.pdf-page-footer h3.title {
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+            color: #7a7a7a;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .pdf-page-header {
+            width: 100%;
+            padding: 0;
+            margin: 1rem auto;
+        }
+
+        .pdf-page-header .pdf-repeat {
+            width: 33.33%;
+        }
+
+        header.pdf-page-header h3.title-1 {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            color: #999903;
+            font-weight: bold;
+        }
+
+        header.pdf-page-header h3.title-2 {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            color: #7a7a7a;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        header.pdf-page-header h3.title-3 {
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+            color: #999903;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .message-counter-head {
+            width: 100%;
+        }
+
+        .numberDiv {
+            width: 10%;
+            padding: 5px;
+            float: left;
+        }
+
+        .subjectDiv {
+            display: inline-block;
+            width: 70%;
+            float: left;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .dateDiv {
+            width: 20%;
+            text-align: right;
+            padding: 5px;
+        }
+
+        .message-counter-head .ram {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<header class="pdf-header">
+    <div>
+        <div style="width:25%; float:left;">
+            <div>
+                <img width="95" height="95" src="http://127.0.0.1:8000/web/assets/img/resize-image/logo-192x192.png" alt="logo" loading="lazy"/>
+            </div>
+        </div>
+        <div style="width:75%; float:right;">
+            <h3 class="title">Title</h3>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</header>
+<main>
+    <!-- Main content goes here -->
+    <section class="pdf-invoice">
+        <div class="order-details-card">
+            <h3 class="card-title">Order Details</h3>
+            <div class="card-items">
+                <div class="item">
+                    <p class="valueP">Item 1</p>
+                </div>
+                <div class="item">
+                    <p class="valueP">Item 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="additional-card">
+            <h3 class="card-title">Additional Details</h3>
+            <div class="card-box">
+                <div class="card-p">Detail 1</div>
+                <div class="card-c">Detail 2</div>
+            </div>
+        </div>
+    </section>
+    <section class="pdf-message-collection">
+        <div class="message-counter-head">
+            <p class="text-1">Messages</p>
+            <p class="text-2">Counter</p>
+        </div>
+        <div class="message-body">
+            <h3 class="subjects">Subject</h3>
+            <h3 class="sub-subjects">Sub-Subject</h3>
+            <div class="content">Content</div>
+        </div>
+    </section>
+</main>
+<footer class="pdf-page-footer">
+    <h3 class="title">Footer Title</h3>
+</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+h1.heading.page {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    color: #4f4440;
+}
+p.paragraph.page {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: #454545;
+    letter-spacing: .06rem;
+    text-align: justify;
+}
+a.hyper-link {
+    color: #F96608;
+    font-weight: 500;
+}
+.btnGenerate{
+    background: #999903
+}

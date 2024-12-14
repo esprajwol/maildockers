@@ -1,0 +1,55 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-orange {
+    color: #f36013;
+}
+
+.facebook-blue {
+    color: #3f5a96;
+}
+
+.instagram-black {
+    color: #262626;
+}
+
+.twitter-blue {
+    color: #39a3f0;
+}
+
+.linkedin-blue {
+    color: #2179b3;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: block;
+}
+
+.no-border{
+    border: 0px;
+}
+
+.pl-0{
+    padding-left: 0;
+}
+
+.pr-0{
+    padding-right: 0;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.fontsize-1-7{
+    font-size: 1.7rem;
+}

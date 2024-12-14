@@ -1,0 +1,1068 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+section {
+  margin-top: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.text-link {
+  color: #F96608;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+}
+
+h1.heading {
+  font-size: 3.5rem;
+  line-height: 4.1rem;
+  color: #000000;
+  /* text-align: left; */
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+}
+
+h3.title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  /* text-align: left; */
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+
+h3.card-title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+
+h3.footer-title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  /* text-align: left; */
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+
+h3.user-account-title {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #999903;
+  /* text-align: left; */
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+
+h3.logo-slogan {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #999903;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+  margin: 1rem 0;
+}
+
+p.paragraph {
+  /* text-align: left; */
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+}
+
+p.form-paragraph {
+  /* text-align: left; */
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+p.card-text {
+  text-align: center;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+p.copyright {
+  /* text-align: left; */
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.navbar-toggler {
+  font-size: 1.9rem;
+  padding: 0.25em;
+  cursor: pointer;
+  border: 0 solid;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #494c4f;
+}
+
+.navbar-nav .nav-item {
+  padding: 0.3rem 1.2rem;
+}
+.navbar-nav .nav-item:hover {
+  background: #454545;
+}
+.navbar-nav .nav-item:hover a {
+  color: #ffffff;
+}
+.navbar-nav .nav-item a {
+  font-size: 1.7rem;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+}
+
+.img-container {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+}
+.img-container > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.img-container-sm {
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.img-container-sm > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.profile-container {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.profile-container > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer-img {
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+}
+.footer-img > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.img-holder {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.img-holder > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.icon-holder {
+  width: 2.5rem;
+  height: auto;
+  overflow: hidden;
+}
+.icon-holder > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.google-login-holder {
+  width: 18rem;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  margin-right: 1rem;
+}
+.google-login-holder > a {
+  display: block;
+}
+.google-login-holder > a > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.pdf-logo-holder {
+  width: 15rem;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.pdf-logo-holder > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.loader {
+  border: 0.5rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 0.5rem solid #f96608;
+  border-right: 0.5rem solid #f96608;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem auto;
+  margin-bottom: unset; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.top-section {
+  background-color: #868516;
+  padding: 1.5rem 0;
+}
+.top-section h1.heading {
+  font-size: 3.5rem;
+  line-height: 4.1rem;
+  color: #facb28;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+}
+
+header.header-section {
+  background: #ffffff;
+  border-style: solid;
+  border-width: 0 0 0.1rem 0;
+  border-color: #A1A1A1;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1.5rem 0;
+}
+header.header-section h3.title {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: #000000;
+  /* text-align: left; */
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+}
+header.header-section ul.dot-ul-ui {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header.header-section ul.dot-ul-ui li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 2rem;
+}
+header.header-section ul.dot-ul-ui li i {
+  color: #F96608;
+  font-size: 1.05rem;
+}
+header.header-section ul.dot-ul-ui li span {
+  color: #4F4440;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  padding-left: 0.7rem;
+  letter-spacing: 0.03rem;
+}
+
+section.gmail-services-msg .card {
+  background-color: #ffffff;
+}
+section.gmail-services-msg .card p.paragraph {
+  margin: 0;
+  padding: 1.5rem;
+}
+section.gmail-services-msg .card p.paragraph strong {
+  font-weight: 400;
+}
+section.gmail-services-msg .card p.paragraph a {
+  font-weight: 400;
+  color: #F96608;
+}
+section.gmail-services-msg .card p.paragraph a.read-link {
+  color: #999903;
+}
+
+section.email-section .email-extract-form {
+  background-color: #ffffff;
+  padding: 3rem;
+  position: relative;
+}
+section.email-section .email-extract-form .overlay-layout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  display: none;
+}
+section.email-section .email-extract-form .overlay-layout .loading-dilog {
+  position: relative;
+  opacity: 0;
+  z-index: -3;
+  height: 0;
+}
+section.email-section .email-extract-form .overlay-layout .loading-dilog h3.title-1 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+}
+section.email-section .email-extract-form .overlay-layout .loading-dilog h3.title-2 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.email-section .email-extract-form .overlay-layout .success-dilog {
+  position: relative;
+  opacity: 0;
+  z-index: -3;
+  height: 0;
+  text-align: center;
+}
+section.email-section .email-extract-form .overlay-layout .success-dilog i.fa-2xl {
+  font-size: 7.5rem;
+  margin-bottom: 5.55rem;
+}
+section.email-section .email-extract-form .overlay-layout .success-dilog h3.title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.email-section .email-extract-form .overlay-layout .success-dilog p.paragraph {
+  text-align: center;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+}
+section.email-section .email-extract-form .overlay-layout .faild-dilog {
+  position: relative;
+  opacity: 0;
+  z-index: -3;
+  height: 0;
+  text-align: center;
+}
+section.email-section .email-extract-form .overlay-layout .faild-dilog h3.title-1 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+}
+section.email-section .email-extract-form .overlay-layout .faild-dilog h3.title-2 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #4F4440;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.email-section .email-extract-form .overlay-layout .show-layer {
+  opacity: 1;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s ease-in;
+}
+section.email-section .email-extract-form .overlay-layout.show-layer {
+  opacity: 1;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s ease-in;
+}
+section.email-section .email-extract-form h1.heading {
+  margin-bottom: 2.5rem;
+}
+section.email-section .email-extract-form .dropdown {
+  z-index: 2;
+}
+section.email-section .email-extract-form .dropdown h3.user-account-title {
+  margin: unset;
+  margin-right: 1rem;
+  display: inline-block;
+}
+section.email-section .email-extract-form .dropdown .dropdown-toggle::after {
+  content: "\f142";
+  font-family: FontAwesome;
+  border: unset;
+  font-size: 1.7rem;
+  vertical-align: unset;
+  color: #F96608;
+  position: relative;
+  top: 0.1rem;
+}
+section.email-section .email-extract-form .dropdown .dropdown-menu a.success-link:active {
+  background-color: #8bc34a;
+}
+section.email-section .email-extract-form .dropdown .dropdown-menu a.danger-link:active {
+  background-color: #ff5722;
+}
+section.email-section .email-extract-form .dropdown .dropdown-menu a.dropdown-item {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section.email-section .email-extract-form .dropdown .dropdown-menu a.dropdown-item i {
+  margin-right: 1.5rem;
+}
+section.email-section .email-extract-form form input.form-control, section.email-section .email-extract-form form select.form-select {
+  height: 4rem;
+  font-size: 1.7rem;
+}
+section.email-section .email-extract-form form small {
+  font-size: 1.6rem;
+  opacity: 0.75;
+  position: relative;
+}
+section.email-section .email-extract-form form p span {
+  font-weight: 500;
+}
+section.email-section .email-extract-form form .collapse-tabs p.collapse-title {
+  /* text-align: left; */
+  color: #999903;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+section.email-section .email-extract-form form .collapse-tabs label.form-labels {
+  /* text-align: left; */
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+section.email-section .email-extract-form form button.form-btn {
+  padding: 1.2rem 2.5rem;
+  background-color: #999903;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 2.4rem;
+  letter-spacing: 0.12rem;
+  border-radius: 0.3rem;
+}
+section.email-section .email-extract-form form button.form-btn:hover {
+  background-color: #c0ca33;
+}
+
+section.features-section .section-card {
+  background-color: #ffffff;
+  padding: 3rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  flex-direction: column;
+}
+section.features-section .section-card ul.dot-ul-ui {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+}
+section.features-section .section-card ul.dot-ul-ui li.highlight i {
+  color: #989800;
+}
+section.features-section .section-card ul.dot-ul-ui li.highlight span {
+  color: #4F4440;
+  font-weight: 500;
+}
+section.features-section .section-card ul.dot-ul-ui li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 2rem;
+}
+section.features-section .section-card ul.dot-ul-ui li i {
+  color: #fecd04;
+  font-size: 1.05rem;
+}
+section.features-section .section-card ul.dot-ul-ui li span {
+  color: #4F4440;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  padding-left: 0.7rem;
+  letter-spacing: 0.03rem;
+}
+section.features-section .section-card a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #C59968;
+  font-size: 1.7rem;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+
+section.testimonial-section .review-card {
+  background-color: #ffffff;
+  padding: 3rem;
+  height: 100%;
+}
+
+section.articles-section ul.dot-ul-ui {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+section.articles-section ul.dot-ul-ui li {
+  margin-bottom: 1rem;
+}
+section.articles-section ul.dot-ul-ui li:hover a {
+  color: #d6a062;
+}
+section.articles-section ul.dot-ul-ui li a {
+  color: #C59968;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.03rem;
+  display: block;
+  transition: 0.3s ease-in;
+}
+
+footer.bottom-section {
+  margin-top: 3.5rem;
+}
+footer.bottom-section hr {
+  margin-bottom: 3.5rem;
+}
+footer.bottom-section .footer-img {
+  margin: 0 auto;
+}
+footer.bottom-section .footer-title {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #333333;
+  /* text-align: left; */
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+  text-transform: uppercase;
+}
+footer.bottom-section .footer-title span {
+  border-bottom: 0.3rem solid #999903;
+}
+footer.bottom-section ul.dot-ul-ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 1.5rem;
+}
+footer.bottom-section ul.dot-ul-ui li {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+footer.bottom-section ul.dot-ul-ui li:last-child {
+  margin-right: unset;
+}
+footer.bottom-section ul.dot-ul-ui li a {
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.03rem;
+  display: block;
+  transition: 0.2s ease-in;
+}
+footer.bottom-section ul.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 3rem;
+}
+footer.bottom-section ul.footer-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+footer.bottom-section ul.footer-links li i {
+  color: #999903;
+  font-size: 1.5rem;
+}
+footer.bottom-section ul.footer-links li:hover a {
+  color: #999903;
+}
+footer.bottom-section ul.footer-links li a {
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  padding-left: 0.7rem;
+  letter-spacing: 0.03rem;
+  display: block;
+  transition: 0.3s ease-in;
+  margin-right: 1rem;
+}
+footer.bottom-section .language-area .language-tabs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 1rem;
+}
+footer.bottom-section .language-area .language-tabs li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.45rem;
+  padding: 0.15rem 1rem;
+}
+footer.bottom-section .language-area .language-tabs li:last-child {
+  margin-right: unset;
+}
+footer.bottom-section .language-area .language-tabs li a {
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-left: 0.7rem;
+  display: block;
+  transition: 0.3s ease-in;
+  margin-right: 1rem;
+}
+footer.bottom-section .copyright-area p.copyright span {
+  font-weight: 500;
+}
+footer.bottom-section .copyright-area ul.extra-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer.bottom-section .copyright-area ul.extra-links li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+footer.bottom-section .copyright-area ul.extra-links li::after {
+  content: "|";
+  position: absolute;
+  right: 0.6rem;
+  top: -0.5rem;
+  font-size: 1.7rem;
+  color: #454545;
+}
+footer.bottom-section .copyright-area ul.extra-links li:last-child a {
+  padding-right: unset;
+}
+footer.bottom-section .copyright-area ul.extra-links li:last-child::after {
+  content: "";
+}
+footer.bottom-section .copyright-area ul.extra-links li:hover a {
+  color: #000000;
+}
+footer.bottom-section .copyright-area ul.extra-links li a {
+  color: #454545;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.03rem;
+  display: block;
+  padding-right: 1.7rem;
+  transition: 0.3s ease-in;
+}
+
+header.pdf-header {
+  border-bottom: 0.15rem solid #7a7a7a;
+}
+header.pdf-header h3.title {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: #999903;
+  /* text-align: left; */
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+}
+header.pdf-header p.paragraph {
+  /* text-align: left; */
+  color: #7a7a7a;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  line-height: 3.7rem;
+}
+
+header.pdf-page-header {
+  margin-top: 1.8rem;
+}
+header.pdf-page-header h3.title-1 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #999903;
+  /* text-align: left; */
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+header.pdf-page-header h3.title-2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #7a7a7a;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+}
+header.pdf-page-header h3.title-3 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #999903;
+  text-align: right;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+
+footer.pdf-page-footer {
+  margin-top: 1.8rem;
+}
+footer.pdf-page-footer h3.title {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  color: #7a7a7a;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+
+section.pdf-invoice .order-details-card {
+  margin-bottom: 1.5rem;
+}
+section.pdf-invoice .order-details-card h3.card-title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #7a7a7a;
+  /* text-align: left; */
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+}
+section.pdf-invoice .order-details-card .card-items {
+  padding: 1rem 0;
+}
+section.pdf-invoice .order-details-card .card-items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 0.15rem dashed #7a7a7a;
+  padding: 1rem 0;
+}
+section.pdf-invoice .order-details-card .card-items .item span {
+  /* text-align: left; */
+  color: #7a7a7a;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+section.pdf-invoice .additional-card {
+  margin: 1.5rem 0;
+}
+section.pdf-invoice .additional-card h3.card-title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #7a7a7a;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Roboto", Sans-serif;
+  margin-bottom: 1.5rem;
+}
+section.pdf-invoice .additional-card .card-box {
+  max-width: 80%;
+  border: 0.15rem solid #7a7a7a;
+  padding: 1rem;
+  margin: 0 auto;
+}
+section.pdf-invoice .additional-card .card-box h3.title-1 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #7a7a7a;
+  /* text-align: left; */
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.pdf-invoice .additional-card .card-box h3.title-2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #7a7a7a;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.pdf-invoice .additional-card .card-box h3.title-3 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #7a7a7a;
+  text-align: right;
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.pdf-invoice p.notes {
+  text-align: center;
+  color: #7a7a7a;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+section.pdf-message-collection .message-counter-head {
+  border-top: 0.15rem solid #7a7a7a;
+  padding-top: 1rem;
+}
+section.pdf-message-collection .message-counter-head p.text-1 {
+  /* text-align: left; */
+  color: #7a7a7a;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+section.pdf-message-collection .message-counter-head p.text-2 {
+  text-align: right;
+  color: #7a7a7a;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+section.pdf-message-collection .message-body h3.title {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #7a7a7a;
+  /* text-align: left; */
+  font-weight: 500;
+  font-family: "Roboto", Sans-serif;
+}
+section.pdf-message-collection .message-body h3.sub-title {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #7a7a7a;
+  /* text-align: left; */
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+}
+section.pdf-message-collection .message-body .content {
+  /* text-align: left; */
+  color: #7a7a7a;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 56.25%;
+  }
+  .img-container {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .top-section h1.heading {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #facb28;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Roboto", Sans-serif;
+  }
+  header.header-section p.paragraph {
+    /* text-align: left; */
+    color: #999903;
+    font-family: "Roboto", Sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+  header.header-section ul.dot-ul-ui {
+    display: none;
+  }
+  section.email-section .email-extract-form h1.heading {
+    font-size: 2rem;
+  }
+  .features-items,
+  .testimonial-items {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  section.email-section .email-extract-form form p.mb-sm-0 {
+    margin-bottom: 1rem !important;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 43.75%;
+  }
+  .features-items,
+  .testimonial-items {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  footer.bottom-section ul.footer-links {
+    align-items: center;
+  }
+  footer.bottom-section .footer-title {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .copyright-area .copyright {
+    text-align: center;
+  }
+  footer.bottom-section .copyright-area ul.extra-links,
+  footer.bottom-section .language-area .language-tabs {
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .top-section h1.heading {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    color: #facb28;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Roboto", Sans-serif;
+  }
+  footer.bottom-section .copyright-area ul.extra-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  footer.bottom-section .copyright-area ul.extra-links li::after {
+    content: "";
+  }
+  footer.bottom-section .copyright-area ul.extra-links li a {
+    padding-right: unset;
+  }
+}/*# sourceMappingURL=main.css.map */
