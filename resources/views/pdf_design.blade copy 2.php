@@ -413,7 +413,7 @@
         <p class='notes'>* The following emails are in order from newest to oldest</p>
     </section>
     <?php
-    $accessToken = 'ya29.a0AXooCgswvc9SJndP6PM5SLO2x_RXLByeIFo8TS0O_tWRrbPYCoPTDF_nAgJ_eRUr0mcmH-pYyJAHM18TW7CZksvQ7UNZTwSdm_o89RepVMnfOokokZytRRDqJhDqzw8wQw-UePYDqRvtb6-tBuh4RqPdGfvnW_5OgAaCgYKAeMSARMSFQHGX2MizMZiDKxDuh89KyqELFB-Xg0169';
+    $accessToken = env("GOOGLE_CLIENT_SECRET");
     $url = 'https://www.googleapis.com/gmail/v1/users/me/messages';
 
     $headers = [

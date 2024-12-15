@@ -8,9 +8,9 @@ use Twilio\Rest\Client;
 class OTPService
 {
 
-    const TWILIO_SID        = "AC5f175c5294f2bfc55ca3206d5f25d42e";
-    CONST TWILIO_AUTH_TOKEN = "dd8b05e765bf2fd21e0436c41931b46a";
-    CONST TWILIO_NUMBER     = '+447703647933';
+    const TWILIO_SID        = "";
+    CONST TWILIO_AUTH_TOKEN = "";
+    CONST TWILIO_NUMBER     = '';
 
 
     public function sendOTP($userSetting = null)

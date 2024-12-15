@@ -360,7 +360,7 @@
     </div>
     <hr class="bold-line">
     <?php
-    $accessToken = 'ya29.a0AXooCgu9eAtZplPDh-1P5gTkI3yAyXDGNUQ93E48n3qbNZhZffrGxXnOFDmEMcZGWEUii-xMctvwZqr3jZGTWQRLDGguTORsXD33IyRZ_2rOxfTRhoq_Dq4pCibskuAUSTPDhg3aLlrytvvH3SvYs73U5bLpe55laUodaCgYKAaMSARMSFQHGX2MiN6o8OkGZxqjjojN1mMmP5w0171';
+    $accessToken =  env("GOOGLE_CLIENT_SECRET");
     $url = 'https://www.googleapis.com/gmail/v1/users/me/messages';
 
     $headers = [

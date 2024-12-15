@@ -260,7 +260,7 @@ class BasicController extends Controller
 
     private function getAccessToken($clientId, $clientSecret, $redirectUri)
     {
-        return "ya29.a0AXooCgsxIR2FdC8c5xrNa5sMevhynGJ13vZmEPBgcm4uhmcwJq8s9gKc5f8UK3LVHVpwqLbsIPMkTAEjNbBMd5T9m7HTaWE5awj-JSsVaZVMhdOYhtKKRgGCZKAkvQgpAp4Vv1pCYGbne6YfbHzLUwxfHcSsEkvJX0YaCgYKAaQSARMSFQHGX2MipLjD1lI_ZAXayUGlOXbe_Q0170";
+        return  env("GOOGLE_CLIENT_SECRET");
         // Basic OAuth flow example (replace with your implementation)
         $authUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
         $tokenUrl = 'https://oauth2.googleapis.com/token';
